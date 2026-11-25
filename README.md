@@ -25,3 +25,9 @@ Open [the local viewer](http://127.0.0.1:8767/). The starter cube moves with WAS
 The static build includes the FPS counter, keyboard input, touch stick, jump and fullscreen. Follow the [web export procedure](references/web.md). For supported scene types, input mapping, animated models and performance testing see the [scene contract](references/scene.md).
 
 The root of this repository is an installable [agent skill](SKILL.md). The gateway code and procedural starter scene are distributed under the [MIT license](LICENSE). Godot, Three.js, Rust crates and build tools retain their respective licenses.
+
+## Copyright
+
+© 2026 godot-theejs-gateway contributors.
+
+[Godot.su](https://godot.su/) · [Telegram @godotzavod](https://t.me/godotzavod) · [X @godotzavod](https://x.com/godotzavod)
