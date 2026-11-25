@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+target/
+node_modules/
+dist/
+.godot/
+assets/bridge/Cargo.lock
+assets/bridge/web/Cargo.lock

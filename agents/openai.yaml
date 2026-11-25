@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot Three.js Gateway"
+  short_description: "Run a Godot game through a live Three.js viewport"
+  default_prompt: "Use $godot-theejs-gateway to connect this Godot project to Three.js and verify live gameplay in a browser."

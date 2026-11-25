@@ -1,0 +1,12 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = "4.1"
+
+[libraries]
+windows.x86_64 = "res://addons/three_gateway/bin/windows-x86_64/godot_three_gateway.dll"
+windows.arm64 = "res://addons/three_gateway/bin/windows-arm64/godot_three_gateway.dll"
+linux.x86_64 = "res://addons/three_gateway/bin/linux-x86_64/libgodot_three_gateway.so"
+linux.arm64 = "res://addons/three_gateway/bin/linux-arm64/libgodot_three_gateway.so"
+macos.arm64 = "res://addons/three_gateway/bin/macos-arm64/libgodot_three_gateway.dylib"
+macos.x86_64 = "res://addons/three_gateway/bin/macos-x86_64/libgodot_three_gateway.dylib"
+web.wasm32 = "res://addons/three_gateway/bin/web/godot_three_gateway.wasm"

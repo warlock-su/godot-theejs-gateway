@@ -1,0 +1,4 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://addons/three_gateway/runner.gd" id="1"]
+[node name="StartThreeGateway" type="Node"]
+script = ExtResource("1")

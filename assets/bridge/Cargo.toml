@@ -1,0 +1,17 @@
+[package]
+name = "godot_three_gateway"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+godot = { version = "*", features = ["lazy-function-tables"] }
+serde_json = "*"
+axum = { version = "*", features = ["ws"] }
+tokio = { version = "*", features = ["fs", "net", "rt", "sync", "time", "macros"] }
+serde = { version = "*", features = ["derive"] }
+tokio-util = { version = "*", features = ["io"] }

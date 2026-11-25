@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en" data-backend="native">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Godot · Three.js Gateway</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./game.css"></head>
+<body><canvas id="simulation" width="1" height="1" tabindex="-1" aria-hidden="true"></canvas>
+<canvas id="webgl" aria-label="Game"></canvas><div id="status" role="status">Connecting…</div>
+<div id="top"><button id="fullscreen" type="button">Fullscreen</button><output id="fps">… FPS</output></div>
+<div id="stick" aria-label="Move"><i></i></div><button id="jump" type="button">Jump</button>
+<div id="keys">WASD / arrows · Space to jump</div><div id="hint" hidden></div>
+<!-- GODOT_ENGINE --><script type="module" src="./gateway.js"></script></body></html>

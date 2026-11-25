@@ -1,0 +1,8 @@
+{
+  "name": "godot-three-gateway-view",
+  "private": true,
+  "type": "module",
+  "dependencies": {"three": "latest"},
+  "devDependencies": {"esbuild": "latest"},
+  "scripts": {"build": "esbuild client.js --bundle --minify --legal-comments=inline --format=esm --outfile=dist/gateway.js"}
+}

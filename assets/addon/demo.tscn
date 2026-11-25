@@ -1,0 +1,32 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://addons/three_gateway/demo.gd" id="controller"]
+[sub_resource type="StandardMaterial3D" id="paint"]
+albedo_color = Color(0.13, 0.73, 0.66, 1)
+[sub_resource type="BoxMesh" id="cube"]
+material = SubResource("paint")
+[sub_resource type="BoxShape3D" id="body"]
+[sub_resource type="BoxShape3D" id="base"]
+size = Vector3(16, 0.2, 16)
+[sub_resource type="PlaneMesh" id="floor"]
+size = Vector2(16, 16)
+[node name="GatewayDemo" type="Node3D"]
+[node name="Player" type="CharacterBody3D" parent="."]
+position = Vector3(0, 0.6, 0)
+script = ExtResource("controller")
+[node name="Mesh" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("cube")
+[node name="Body" type="CollisionShape3D" parent="Player"]
+shape = SubResource("body")
+[node name="Floor" type="StaticBody3D" parent="."]
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("floor")
+[node name="Surface" type="CollisionShape3D" parent="Floor"]
+position = Vector3(0, -0.1, 0)
+shape = SubResource("base")
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation = Vector3(-1.0, -0.6, 0)
+shadow_enabled = true
+[node name="Camera" type="Camera3D" parent="."]
+position = Vector3(0, 3, 6)
+rotation = Vector3(-0.39, 0, 0)
+current = true

@@ -1,0 +1,9 @@
+config_version=5
+[application]
+config/name="Three Gateway"
+run/main_scene="res://addons/three_gateway/demo.tscn"
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+[rendering]
+renderer/rendering_method="gl_compatibility"

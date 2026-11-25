@@ -1,0 +1,17 @@
+[package]
+name = "godot_three_gateway"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+
+[lib]
+path = "../src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+godot = { version = "*", features = ["experimental-wasm", "experimental-wasm-nothreads", "lazy-function-tables"] }
+serde_json = "*"
+
+[profile.release]
+panic = "abort"

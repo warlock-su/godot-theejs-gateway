@@ -1,0 +1,6 @@
+--- a/platform/web/web_main.cpp
++++ b/platform/web/web_main.cpp
+@@ -86 +86,2 @@ void main_loop_callback() {
+-	bool force_draw = DisplayServerWeb::get_singleton()->check_size_force_redraw();
++	static const bool has_web_display = DisplayServer::get_singleton()->get_name() == "web";
++	bool force_draw = has_web_display && DisplayServerWeb::get_singleton()->check_size_force_redraw();
